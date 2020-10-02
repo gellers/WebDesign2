@@ -1,49 +1,33 @@
-//figure out what's wrong
+var lowerBoundOfGuess = 1;
+var upperBoundOfGuess = 16; 
 
-function findGuessRange(guessMax, guessMin) {
-    return Math.abs(guessMin - guessMax);
+function createGuess(lowerBoundOfGuess, upperBoundOfGuess) {
+    let guess = Math.trunc(Math.random() * (upperBoundOfGuess - lowerBoundOfGuess) + lowerBoundOfGuess);
+    return guess; 
 }
 
-function createGuess(guessRange, guessMin) {
-    return Math.trunc(Math.random()* (guessRange + 1) +guessMin);
-}
-
-var num = prompt("Enter a number between 1 and 16");
-//console.log(num);
-
-//guess range: range of number that are between largest and smallest guess
-var guessMin = 1;
-var guessMax = 16;
-console.log(findGuessRange(guessMax, guessMin));
-//the number the program is trying to guess
-var guess = createGuess(findGuessRange(guessMax, guessMin), guessMin);
-//response to guess of computer from user
-var response;
-var isCorrectNum = false;
-
-
+var response; 
+var isCorrectNum = false; 
+var numberToGuess = prompt("Enter a number between 1 and 16");
+var guess; 
 
 while (isCorrectNum == false) {
-    alert("The computer guessed " + guess);
+    guess = createGuess(lowerBoundOfGuess, upperBoundOfGuess); 
+    alert("The computer guesssed " + guess); 
     response = prompt("Is the guess correct (0), smaller (1), or larger (2) (than your number)?");
-    
-    if (response == 0) {
-        isCorrectNum = true;
+
+    //larger than user's number
+    if (response == 2) {
+        upperBoundOfGuess = guess - 1; 
+    //smaller than user's number
     } else if (response == 1) {
-        guessMax--; 
-    } else if (response == 2) {
-        guessMin++; 
-    } else{
+        lowerBoundOfGuess = guess + 1;  
+    //correct
+    } else if (response == 0) {
+        isCorrectNum = true;  
+    } else {
         alert("Invalid input"); 
     }
-    alert(isCorrectNum);
-
-    //somethings wrong is this part
-    guess = createGuess(findGuessRange(guessMax, guessMin), guessMIn);
-
-    
 }
 
-
-
-alert("finished"); 
+alert("The computer guessed correctly. Yay!");
