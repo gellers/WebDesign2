@@ -1,0 +1,15 @@
+.button {
+    display: inline-block;
+    color: royalblue; 
+    background-color: rgb(195, 238, 252);
+    font-family: 'Times New Roman', Times, serif;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.button:hover{
+    color: red;
+    border-color: cornflowerblue;
+    cursor: pointer;
+    background-color: rosybrown;
+}
