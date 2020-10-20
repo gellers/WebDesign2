@@ -1,0 +1,11 @@
+#container {
+    background-color: indianred;
+    padding: 8px grey;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: lavenderblush;
+    
+}

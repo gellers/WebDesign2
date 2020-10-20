@@ -1,0 +1,10 @@
+.button {
+    color: white;
+    background: rgb(13, 13, 129);
+    padding: 2px;
+  }
+  
+  /*don't know how to make clearner, won't change color unless I use span:hover*/
+  .botton:hover, span:hover {
+    color: yellow;
+  }
