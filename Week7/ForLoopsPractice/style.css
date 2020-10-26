@@ -1,0 +1,19 @@
+.button {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: gray;
+    color: white;
+    padding: 5px;
+}
+.button:hover {
+    color: yellow;
+    cursor: pointer;
+}
+.count {
+    color: black;
+    background-color: cornflowerblue;
+    margin: 5px;
+    width: 25;
+    text-align: center;
+}
