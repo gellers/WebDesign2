@@ -1,0 +1,10 @@
+.button {
+    background-color: aqua;
+    color: black;
+    margin: 4px;
+    text-align: center;
+}
+.button:hover {
+    color: cadetblue;
+    cursor: pointer;
+}
