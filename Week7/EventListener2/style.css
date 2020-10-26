@@ -1,4 +1,21 @@
-div {
+body {
+    background-color: rebeccapurple;
+}
+#container {
     background-color: blue;
-    padding: 10px;
+}
+.box {
+    width: 200px;
+    height: 100px;
+    background-color: cadetblue;
+    margin: 10px;
+
+}
+.button {
+    background-color: whitesmoke;
+    color: black;
+}
+.button:hover {
+    color: orangered;
+    cursor: pointer;
 }
