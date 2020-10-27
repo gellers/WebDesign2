@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>page</title>
-        <script src="script.js"></script>  
-    </head>
-    <body>
-        <h1>page</h1>
-    </body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Revised Magic 8 Ball</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js" async></script>
+  </head>
+  <body>
+    <nav>
+        <span class="button" onclick="displayList();"> Show all answers </span>
+        <div class="enter-text">
+            <form>
+                <label>Enter question: </label>
+                <input type="text" id="question" name="question" placeholder="enter question here">
+                <span class="button" onclick="giveAnswer();"> Submit </span>
+            </form>
+        </div>
+    </nav>
+    <div id="answer"></div>
+    <div id="container"></div>
+  </body>
 </html>
