@@ -16,10 +16,8 @@ function removeDisplayList() {
     this.remove(); 
 }
 //adds random answer to answer div onclick
-//make so when answer is given, it stops appearing as answer in form
 function giveAnswer() {
     let randNum = Math.trunc(Math.random() * responses.length); 
-    // alert(responses[randNum]);
     let answer = document.getElementById("answer"); 
     let createdAnswer = document.createElement("p");
     createdAnswer.innerHTML = responses[randNum]; 
