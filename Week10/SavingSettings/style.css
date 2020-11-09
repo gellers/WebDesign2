@@ -1,0 +1,35 @@
+header{
+    font-size: 2rem;
+    color: navy;
+    background-color: lightskyblue;
+}
+nav{
+    width: 125px;
+    float: left;
+    min-height: 400px;
+    background-color: lightskyblue;
+}
+nav *{
+    display: block;
+    max-width: 100px;
+    margin: 5px 2px;
+
+}
+.container{
+    margin-left: 200px;
+    display: flex;
+    flex-flow: row wrap;
+}
+.content{
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    border: 2px solid black;
+    background-color: brown;
+}
+footer{
+    background-color: lightskyblue;
+    text-align: center;
+    clear: both;
+}
