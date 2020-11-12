@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
+    <title>Save Settings</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="script.js"></script>
   </head>
   <body>
-      <header>Saving Settings--Hello [user]</header>
+      <header id="header">Saving Settings--Hello [user]</header>
       <nav>
           <label for="txtUser">User:</label>
           <input type="text" id="txtUser" placeholder="User Name">
@@ -21,7 +21,7 @@
           <label for="selBorder">Border:</label>
           <!-- You create the drop down for Background -->
 
-            <span class="button" onclick="saveSettings();">Save Settings</span>
+            <span class="button" onclick="saveInputs();">Save Settings</span>
       </nav>
       <div class="container">
         <div class="content"></div>
@@ -30,10 +30,11 @@
         <div class="content"></div>
         <div class="content"></div>
         <div class="content"></div>
-        <div class="content"></div>        
+        <div class="content"></div>
       </div>
       <footer>
-          Your job is to complete the settings bar, write the code to apply those settings (exampel loop provided) and to add in the code to save and retrieve those settings
+          Your job is to complete the settings bar, write the code to apply those settings (example loop provided) 
+          and to add in the code to save and retrieve those settings
       </footer>
   </body>
 </html>

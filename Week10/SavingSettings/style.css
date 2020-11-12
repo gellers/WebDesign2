@@ -33,3 +33,10 @@ footer{
     text-align: center;
     clear: both;
 }
+.button{
+    background-color: white;
+    color: black;
+}
+.button:hover{
+    color: rgb(97, 97, 179);
+}
