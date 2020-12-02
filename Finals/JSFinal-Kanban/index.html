@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>JS Final</title>
+        <link href="index.css" rel="stylesheet" type="text/css"/>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <h1>Kanban Organizer</h1>
+        <div class="create-task">
+            <input type="text" placeholder="Enter task" id="new-task">
+            <span class="submit-button" onclick="createTask();">Add</span>
+        </div>
+        <div id="display-tasks">
+            <div id="to-do" class="tasks" ondrop="drop(event);" ondragover="allowDrop(event)">To do</div>
+            <div id="in-progress" class="tasks" ondrop="drop(event);" ondragover="allowDrop(event)">In progress</div>
+            <div id="testing" class="tasks" ondrop="drop(event);" ondragover="allowDrop(event)">Testing</div>
+            <div id="done" class="tasks" ondrop="drop(event);" ondragover="allowDrop(event)">Done</div>
+        </div>
+    </body>
+</html>

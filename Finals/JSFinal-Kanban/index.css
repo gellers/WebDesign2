@@ -1,0 +1,37 @@
+.submit-button {
+    border: solid black;
+    background: white;
+    padding: 2px;
+}
+.submit-button:hover {
+    cursor: pointer; 
+    color: blue;
+    border: solid lightblue; 
+}
+.create-task {
+    margin: 20px;
+}
+#display-tasks {
+    width: 1000px;
+    padding: 20px;
+    min-height: 400px;
+    display: flex;
+    background: rgb(77, 75, 75); 
+}
+.tasks {
+    background: rgb(235, 230, 226);
+    color: black;
+    flex: 1;
+    width: 20%;
+    padding: 5px;
+    border: 2px solid black;
+}
+.new-div {
+    background: rgb(77, 75, 75); 
+    border: 2px solid black;
+    width: 200px;
+    min-height: 200px;
+    margin: 5px;
+    padding: 5px;
+    color: white;
+}
